@@ -5,7 +5,7 @@ export default function Footer() {
   const navigate=useNavigate()
 
   const goAutor =()=> {
-    navigate("/Autor");  
+    navigate("/Matematico/Autor");  
     }
 
 return(

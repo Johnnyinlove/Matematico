@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-      <Route path='/Matematico/' element={<Perfil/> }/>
+      <Route path='/Matematico/' element={<Home/> }/>
       <Route path='/Matematico/Home' element={<Home/> }/>
       <Route path='/Matematico/Horario' element={<Horario/> }/>
       <Route path='/Matematico/Cursos' element={<Cursos/> }/>
