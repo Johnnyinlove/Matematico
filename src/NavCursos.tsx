@@ -8,15 +8,15 @@ export default function Nav () {
   const navigate=useNavigate()
 
    const ReturnHome =()=> {
-   navigate("/MathSolution/Home");  
+   navigate("/Matematico/Home");  
    }
 
    const goHorario =()=> {
-   navigate("/MathSolution/Horario");  
+   navigate("/Matematico/Horario");  
    }
    
    const goCursos =()=> {
-   navigate("/MathSolution/Cursos");  
+   navigate("/Matematico/Cursos");  
    }
 
 

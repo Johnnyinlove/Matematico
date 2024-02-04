@@ -4,7 +4,7 @@ export default function NotFound() {
 const navigate=useNavigate()
 
     const ReturnHome =()=> {
-    navigate("/MathSolution/Home");  
+    navigate("/Matematico/Home");  
     }
 
     return (

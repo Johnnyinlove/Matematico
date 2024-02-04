@@ -14,13 +14,13 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-      <Route path='/MathSolution/' element={<Perfil/> }/>
-      <Route path='/MathSolution/Home' element={<Home/> }/>
-      <Route path='/MathSolution/Horario' element={<Horario/> }/>
-      <Route path='/MathSolution/Cursos' element={<Cursos/> }/>
+      <Route path='/Matematico/' element={<Perfil/> }/>
+      <Route path='/Matematico/Home' element={<Home/> }/>
+      <Route path='/Matematico/Horario' element={<Horario/> }/>
+      <Route path='/Matematico/Cursos' element={<Cursos/> }/>
       {/* <Route path='/MathSolution/Contrasena' element={<Contrasena/> }/> */}
-      <Route path='MathSolution/Autor' element={<Autor/> }/>
-      <Route path='/MathSolution/*' element={<NotFound/> }/>
+      <Route path='Matematico/Autor' element={<Autor/> }/>
+      <Route path='/Matematico/*' element={<NotFound/> }/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,
