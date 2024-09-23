@@ -88,7 +88,7 @@ return (
 
 
 
-<h2>Series Numericas</h2>
+<h2>Series Numericas aja</h2>
 
 <div className="container-fluid">
   <ReactPlayer 
