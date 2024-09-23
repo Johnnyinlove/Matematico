@@ -236,4 +236,7 @@ text-align: center; /*para alinear en el centro*/
 }
 
 
-
+.margin-top-bottom{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
