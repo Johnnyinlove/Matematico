@@ -53,9 +53,9 @@ return (
 
 <NavCursos/>
 
+<nav className="bg-success p-2 text-dark bg-opacity-25">
 
-
-<button type="button" className="btn margin-top-bottom btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" className="btn margin-top-bottom btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Indicaciones
 </button>
 
@@ -67,7 +67,7 @@ return (
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div className="modal-body">
-        En esta seccion podras encontrar las conferencias tocante al curso de Matematica III de la Universidad de Ciego de Avila
+        En esta seccion podrás encontrar las conferencias tocante al curso de Matematica III de la Universidad de Ciego de Avila
       </div>
       <div className="modal-footer">
         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -216,6 +216,8 @@ return (
     </div>
 </div>
 
+
+</nav>
 
 </>
 

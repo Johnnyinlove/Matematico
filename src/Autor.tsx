@@ -79,7 +79,7 @@ Básico: English
 
       <div className="card-body grid text-center">
 
-    <h5 className="card-title">Mis redes sociales</h5>
+    <h5 className="card-title">Contáctame!!</h5>
 
       <span className=" rounded-pill text-center-min">
     <a href="https://www.facebook.com/juan.cruzoduardo"  rel='noopener' target="_blank">

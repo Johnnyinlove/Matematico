@@ -36,7 +36,7 @@ export default function Nav () {
       Home</a>
   </li>
   <li className="nav-item dropdown active">
-    <a className="nav-link dropdown-toggle color-new" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Materiales</a>
+    <a className="nav-link dropdown-toggle color-new" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Matemática III</a>
     <ul className="dropdown-menu">
       <li><a onClick={goCursos}  className="dropdown-item" href="#">Videos</a></li>
       <li><a onClick={goHorario} className="dropdown-item" href="#">Documentos</a></li>
