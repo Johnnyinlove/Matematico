@@ -70,8 +70,8 @@ return (
       <img src={images[slideIndex]} alt={`Imagen ${slideIndex + 1}`} className="d-block w-100 carousel-item-img  " />
     </div>
     <div className="carousel-caption d-none d-md-block">
-        <h5 className="text-light">EL aprendizaje es vital</h5>
-        <p className="text-light">La repetición es la madre de la enseñanza</p>
+        <h5 className="text-primary">EL aprendizaje es vital</h5>
+        <p className="text-primary">La repetición es la madre de la enseñanza</p>
       </div>
      </div>
      <button   onClick={prevSlide} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
