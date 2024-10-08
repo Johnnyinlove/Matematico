@@ -1,7 +1,22 @@
-import {} from "react";
+import { useState } from 'react';  
+import { useNavigate } from "react-router-dom";
+
 
 export default function Segurity () {
+  const [password, setPassword] = useState('');  
+  const navigate = useNavigate();  
 
+  const ReturnHome = (e:any) => {  
+    e.preventDefault(); // Evita el comportamiento por defecto del formulario  
+
+    if (password === 'Abc123') {  
+      navigate("/Matematico/Economia");  
+    } else {  
+      alert("Contraseña incorrecta.");  
+    }  
+  };  
+
+  
 
 
     return (
@@ -15,10 +30,18 @@ export default function Segurity () {
   </div>
   <div className="col-auto">
     <label htmlFor="inputPassword2" className="visually-hidden">Contraseña</label>
-    <input type="password" className="form-control" id="inputPassword2" placeholder="Contraseña"/>
+    <input 
+      type="password"
+      className="form-control" 
+      id="inputPassword2" 
+      placeholder="Contraseña"
+      value={password}  
+      onChange={(e) => setPassword(e.target.value)} // Actualiza el estado  
+  /> 
+  
   </div>
   <div className="col-auto">
-    <button type="submit" className="btn btn-primary mb-3">Aceptar</button>
+    <button type="submit" onClick={ReturnHome} className="btn btn-primary mb-3">Aceptar</button>
   </div>
 </form>
 </div>

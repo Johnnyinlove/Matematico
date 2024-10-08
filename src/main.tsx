@@ -6,6 +6,7 @@ import Horario from './Horario.tsx'
 import NotFound from "./NotFound.tsx";
 import Cursos from './Cursos.tsx'
 import  Autor  from "./Autor.tsx";
+import Economia from "./Economia.tsx";
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -16,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Route path='/Matematico/Home' element={<Home/> }/>
       <Route path='/Matematico/Horario' element={<Horario/> }/>
       <Route path='/Matematico/Cursos' element={<Cursos/> }/>
-      {/* <Route path='/MathSolution/Contrasena' element={<Contrasena/> }/> */}
+      <Route path='/Matematico/Economia' element={<Economia/> }/>
       <Route path='Matematico/Autor' element={<Autor/> }/>
       <Route path='/Matematico/*' element={<NotFound/> }/>
     </Routes>
