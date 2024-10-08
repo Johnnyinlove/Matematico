@@ -4,12 +4,13 @@
 export default function Economia() {
     return(
 
-<>        
-<h1>Registro de Inversiones TecnoTurquino</h1>
+<>  
+
+<div className='container bg-success bg-opacity-25 p-5 border-opacity-75'>
+<h1>Registro de Inversiones Tecno Turquino</h1>
 
 
-{/* <h2>Series Numericas</h2> */}
-
+<div className="container-sm color-primary">
 <div>
   <div className='btn btn-primary'>
     <a className="fs-6 text-light"  href={Economiaq} target="_blank" rel="noopener"> 
@@ -25,6 +26,9 @@ export default function Economia() {
     Descargar PDF
     </a>
   </div>
+</div>
+</div>
+
 </div>
 </>
     )
