@@ -14,7 +14,7 @@ export default function Economia() {
 <div>
   <div className='btn btn-primary'>
     <a className="fs-6 text-light"  href={Economiaq} target="_blank" rel="noopener"> 
-    Ver PDF
+    Ver Registro
     </a>
   </div>
 </div>
@@ -23,7 +23,7 @@ export default function Economia() {
 <div className="margin-top-bottom">
   <div className='btn btn-primary'>
     <a className="fs-6 text-light"  href={Economiaq} target="_blank" rel="noopener noreferrer" download="Conferencia Series Numericas.pdf"> 
-    Descargar PDF
+    Descargar Registro
     </a>
   </div>
 </div>
