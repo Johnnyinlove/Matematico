@@ -5,7 +5,7 @@ import './App.css'
 import Footer from './Footer'
 import Nav from './Nav'
 import Slider from './Slider'
-
+import Contrasena from './Contrasena'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -17,6 +17,7 @@ function App() {
 
     <Nav/>
     <Slider/>
+    <Contrasena/>
     <Footer/>
     
     </div>

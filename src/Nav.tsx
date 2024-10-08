@@ -34,7 +34,7 @@ export default function Nav () {
   <li className="nav-item  ">
     <a onClick={ReturnHome} className="nav-link active" aria-current="page" href="#">
       <img src={svg} alt="svg" />
-      Homes</a>
+      Inicio</a>
   </li> 
   <div className="btn-group">
   <button className="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
