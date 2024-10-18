@@ -21,7 +21,7 @@ export default function Segurity () {
 
     return (
 <>
-<div className="container">
+<div className="container m-xl-5">
 
 <form className="row g-3">
   <div className="col-auto">

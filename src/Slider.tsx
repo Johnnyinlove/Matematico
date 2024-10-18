@@ -67,7 +67,7 @@ return (
 
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={images[slideIndex]} alt={`Imagen ${slideIndex + 1}`} className="d-block w-100 carousel-item-img  " />
+      <img src={images[slideIndex]} alt={`Imagen ${slideIndex + 1}`} className="d-block w-100 img-fluid img-responsive carousel-item-img  " />
     </div>
     <div className="carousel-caption d-none d-md-block">
         <h5 className="text-primary">EL aprendizaje es vital</h5>

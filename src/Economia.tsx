@@ -22,7 +22,7 @@ export default function Economia() {
 
 <div className="margin-top-bottom">
   <div className='btn btn-primary'>
-    <a className="fs-6 text-light"  href={Economiaq} target="_blank" rel="noopener noreferrer" download="Conferencia Series Numericas.pdf"> 
+    <a className="fs-6 text-light"  href={Economiaq} target="_blank" rel="noopener noreferrer" download="Registro de Economia TecnoTurquino.pdf"> 
     Descargar Registro
     </a>
   </div>

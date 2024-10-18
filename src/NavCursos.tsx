@@ -11,9 +11,11 @@ export default function Nav () {
    navigate("/Matematico/Home");  
    }
 
-   const goHorario =()=> {
-   navigate("/Matematico/Horario");  
-   }
+   const goCursoMatI =()=> {
+   navigate("/Matematico/CursoMatI");  
+   } 
+   
+  
    
    const goCursos =()=> {
    navigate("/Matematico/Cursos");  
@@ -36,23 +38,15 @@ export default function Nav () {
       Home</a>
   </li>
   <li className="nav-item dropdown active">
-    <a className="nav-link dropdown-toggle color-new" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Matemática I</a>
-    <ul className="dropdown-menu">
-      <li><a onClick={goHorario} className="dropdown-item" href="#">Documentos</a></li>
-      <li><a onClick={goCursos}  className="dropdown-item" href="#">Videos</a></li>
-    </ul>
+    <a onClick={goCursoMatI} className="nav-link dropdown-toggle color-new" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Matemática I</a>
   </li>
   <li className="nav-item dropdown active">
-    <a className="nav-link dropdown-toggle color-new" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Matemática III</a>
-    <ul className="dropdown-menu">
-      <li><a onClick={goHorario} className="dropdown-item" href="#">Documentos</a></li>
-      <li><a onClick={goCursos}  className="dropdown-item" href="#">Videos</a></li>
-    </ul>
+    <a onClick={goCursos} className="nav-link dropdown-toggle color-new" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Matemática III</a>
   </li> 
    <li className="nav-item dropdown active">
     <a className="nav-link dropdown-toggle color-new" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Matemática IV</a>
     <ul className="dropdown-menu">
-      <li><a onClick={goHorario} className="dropdown-item" href="#">Documentos</a></li>
+      <li><a onClick={goCursoMatI} className="dropdown-item" href="#">Documentos</a></li>
       <li><a onClick={goCursos}  className="dropdown-item" href="#">Videos</a></li>
     </ul>
   </li>

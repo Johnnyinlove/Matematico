@@ -38,59 +38,50 @@ export default function Nav () {
   </li> 
   <div className="btn-group">
   <button className="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-  Repasador
+  Servicio
   </button>
   <ul className="dropdown-menu">
     <li>
     
     <div className="btn-group dropend">
   <button type="button" className="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-  Cursos
+  Profesor
+  </button>
+  <ul className="dropdown-menu">
+    <li><a onClick={goCursos} className="dropdown-item" href="#">Matematica</a></li>
+     </ul>
+</div>   
+    <div className="btn-group dropend">
+  <button type="button" className="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  Repasador
   </button>
   <ul className="dropdown-menu">
     <li><a onClick={goCursos} className="dropdown-item" href="#">Matematica</a></li>
     <li><a className="dropdown-item" href="#">Ingles</a></li>
     <li><a className="dropdown-item" href="#">Informatica</a></li>
+    <li><a className="dropdown-item" href="#">Fisica</a></li>
+    <li><a className="dropdown-item" href="#">Quimica</a></li>
+  </ul>
+</div>
+
+<div className="btn-group dropend">
+  <button type="button" className="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  Programador
+  </button>
+  <ul className="dropdown-menu">
+    <li><a onClick={goCursos} className="dropdown-item" href="#">Web</a></li>
+    {/* <li><a className="dropdown-item" href="#">Web</a></li> */}
+    {/* <li><a className="dropdown-item" href="#">Informatica</a></li> */}
   </ul>
 </div>
     
-    <div className="btn-group dropend">
-  <button onClick={goHorario}  type="button" className="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-  Horario
-  </button>
-</div>
+
 </li>
 </ul>
 
 
 </div>
-<div className="btn-group">
-  <button className="btn bg-alert-mio dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-  Confección de Documentos
-  </button>
-  <ul className="dropdown-menu">
-    <li>
-    
-    <div className="btn-group dropend">
-  <button type="button" className="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-  Cursos
-  </button>
-  <ul className="dropdown-menu">
-    <li><a className="dropdown-item" href="#">Matematica</a></li>
-    <li><a className="dropdown-item" href="#">Ingles</a></li>
-    <li><a className="dropdown-item" href="#">Informatica</a></li>
-  </ul>
-</div>
-    
-    <div className="btn-group dropend">
-  <button type="button" className="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-  Horario
-  </button>
-</div>
-</li>
-</ul>
 
-</div>
 
 <button onClick={goAutor} className="btn bg-alert-mio dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
 Autor

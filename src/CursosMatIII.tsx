@@ -7,7 +7,7 @@ import Potencia from "/Conferencia_Series_de_Potencia.pdf";
 import Edo from "/Conferencia_EDO.pdf";
 import EdoN from "/Conferencia_EDO_N.pdf";
 import Sledo from "/Conferencia_SLEDO.pdf";
-
+import Final from "../public/Modelo_de_Prueba_Final_Mat_III.pdf";
 export default function Cursos () {
 
 
@@ -59,7 +59,7 @@ return (
   Indicaciones
 </button>
 
-<div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div className="modal-dialog">
     <div className="modal-content">
       <div className="modal-header">
@@ -78,19 +78,11 @@ return (
 </div>
 
 
-
-
-
 {/* <p>
   <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
     Toggle width collapse
   </button>
 </p> */}
-
-
-
-
-
 
 
 {/* <div className="container-fluid">
@@ -111,13 +103,12 @@ return (
 
   <h2>Series Numericas</h2>
 
-<div>
-    <div className='btn btn-primary'>
-      <a className="fs-6 text-light"  href={Numericas} target="_blank" rel="noopener"> 
-      Ver PDF
-      </a>
-    </div>
-</div>
+  <iframe id="inlineFrameExample" 
+    title="Inline Frame Example" 
+    width="300" 
+    height="200" 
+    src={Numericas}> 
+</iframe>
 
 
 <div className="margin-top-bottom">
@@ -135,13 +126,12 @@ return (
 
   <h2>Series de Potencias</h2>
 
-<div>
-    <div className='btn btn-primary'>
-      <a className="fs-6 text-light"  href={Potencia} target="_blank" rel="noopener"> 
-      Ver PDF
-      </a>
-    </div>
-</div>
+  <iframe id="inlineFrameExample" 
+    title="Inline Frame Example" 
+    width="300" 
+    height="200" 
+    src={Potencia}> 
+</iframe>
 
 
 
@@ -158,13 +148,12 @@ return (
 
 <h2>Ecuaciones diferenciales de Primer Orden</h2>
 
-<div>
-    <div className='btn btn-primary'>
-      <a className="fs-6 text-light"  href={Edo} target="_blank" rel="noopener"> 
-      Ver PDF
-      </a>
-    </div>
-</div>
+<iframe id="inlineFrameExample" 
+    title="Inline Frame Example" 
+    width="300" 
+    height="200" 
+    src={Edo}> 
+</iframe>
 
 
 
@@ -179,13 +168,12 @@ return (
 
 <h2>Ecuaciones diferenciales de Orden Superior</h2>
 
-<div>
-    <div className='btn btn-primary'>
-      <a className="fs-6 text-light"  href={EdoN} target="_blank" rel="noopener"> 
-      Ver PDF
-      </a>
-    </div>
-</div>
+<iframe id="inlineFrameExample" 
+    title="Inline Frame Example" 
+    width="300" 
+    height="200" 
+    src={EdoN}> 
+</iframe>
 
 
 <div className="margin-top-bottom">
@@ -199,18 +187,42 @@ return (
 
 <h2>Sistema de Ecuaciones Diferenciales Lineales</h2>
 
-<div>
-    <div className='btn btn-primary'>
-      <a className="fs-6 text-light"  href={Sledo} target="_blank" rel="noopener"> 
-      Ver PDF
-      </a>
-    </div>
-</div>
+<iframe id="inlineFrameExample" 
+    title="Inline Frame Example" 
+    width="300" 
+    height="200" 
+    src={Sledo}> 
+</iframe>
 
 
 <div className="margin-top-bottom">
     <div className='btn btn-primary'>
       <a className="fs-6 text-light"  href={Sledo} target="_blank" rel="noopener noreferrer" download="Conferencia SLEDO.pdf"> 
+      Descargar PDF
+      </a>
+    </div>
+</div>
+
+<h2 className="text-danger">Ejemplo de Prueba Final</h2>
+
+{/* <div>
+    <div className='btn btn-primary'>
+      <a className="fs-6 text-light"  href={Final} target="_blank" rel="noopener"> 
+      Ver PDF
+      </a>
+    </div>
+</div> */}
+
+<iframe id="inlineFrameExample" 
+    title="Inline Frame Example" 
+    width="300" 
+    height="200" 
+    src={Final}> 
+</iframe>
+
+<div className="margin-top-bottom">
+    <div className='btn btn-primary'>
+      <a className="fs-6 text-light"  href={Final} target="_blank" rel="noopener noreferrer" download="Prueba Final Matematica III.pdf"> 
       Descargar PDF
       </a>
     </div>
