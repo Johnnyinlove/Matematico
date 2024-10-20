@@ -14,8 +14,8 @@ export default function Nav () {
    navigate("/Matematico/Horario");  
    }
    
-   const goCursos =()=> {
-   navigate("/Matematico/Cursos");  
+   const goMatIII =()=> {
+   navigate("/Matematico/CursoMatIII");  
    }
 
    const goAutor =()=> {
@@ -37,26 +37,26 @@ export default function Nav () {
       Inicio</a>
   </li> 
   <div className="btn-group">
-  <button className="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+  <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
   Servicio
   </button>
   <ul className="dropdown-menu">
     <li>
     
     <div className="btn-group dropend">
-  <button type="button" className="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" className="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
   Profesor
   </button>
   <ul className="dropdown-menu">
-    <li><a onClick={goCursos} className="dropdown-item" href="#">Matematica</a></li>
+    <li><a onClick={goMatIII} className="dropdown-item" href="#">Matematica</a></li>
      </ul>
 </div>   
     <div className="btn-group dropend">
-  <button type="button" className="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" className="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
   Repasador
   </button>
   <ul className="dropdown-menu">
-    <li><a onClick={goCursos} className="dropdown-item" href="#">Matematica</a></li>
+    <li><a onClick={goMatIII} className="dropdown-item" href="#">Matematica</a></li>
     <li><a className="dropdown-item" href="#">Ingles</a></li>
     <li><a className="dropdown-item" href="#">Informatica</a></li>
     <li><a className="dropdown-item" href="#">Fisica</a></li>
@@ -65,11 +65,11 @@ export default function Nav () {
 </div>
 
 <div className="btn-group dropend">
-  <button type="button" className="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" className="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
   Programador
   </button>
   <ul className="dropdown-menu">
-    <li><a onClick={goCursos} className="dropdown-item" href="#">Web</a></li>
+    <li><a onClick={goMatIII} className="dropdown-item" href="#">Web</a></li>
     {/* <li><a className="dropdown-item" href="#">Web</a></li> */}
     {/* <li><a className="dropdown-item" href="#">Informatica</a></li> */}
   </ul>

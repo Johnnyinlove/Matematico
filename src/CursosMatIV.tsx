@@ -85,7 +85,7 @@ return (
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div className="modal-body">
-        En esta seccion podrás encontrar las conferencias tocante al curso de Matematica III de la Universidad de Ciego de Avila
+        En esta seccion podrás encontrar las conferencias tocante al curso de Matematica IV de la Universidad de Ciego de Avila
       </div>
       <div className="modal-footer">
         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -119,7 +119,7 @@ return (
 <h1>Conferencias</h1>
 
 
-  <h2>Series Numericas</h2>
+  <h2>Solucion de Ecuaciones</h2>
 
   <iframe id="inlineFrameExample" 
     title="Inline Frame Example" 

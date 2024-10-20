@@ -23,7 +23,7 @@ function Autor() {
     <div className='App'>
 
     <div className="card mb-3"  >
-    <a onClick={ReturnHome} href="#" className="btn btn-primary">Ir a Home</a>
+    <a onClick={ReturnHome} href="#" className="btn btn-primary">Inicio</a>
     <p className="fw-bolder text-center fs-2 ">Sobre mi</p>
     <div className="grid text-center container-sm">
       <img src={yo} className="img-fluid col-md-4 rounded-start" alt="yo"/>

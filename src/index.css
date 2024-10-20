@@ -123,7 +123,6 @@ button:focus-visible {
 
 .bg-alert-mio{
 background-color: #5aa7f3;
-  
 }
 
 .container-fluid1{
@@ -240,3 +239,10 @@ text-align: center; /*para alinear en el centro*/
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+
+@media (max-width:768px) {  
+  #inlineFrameExample {  
+  display: none; /* Oculta el iframe en pantallas más pequeñas */  
+  }  
+ }

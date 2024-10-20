@@ -17,9 +17,13 @@ export default function Nav () {
    
   
    
-   const goCursos =()=> {
-   navigate("/Matematico/Cursos");  
-   }
+   const goMatIII =()=> {
+    navigate("/Matematico/CursoMatIII");  
+    }
+ 
+   const goMatIV =()=> {
+    navigate("/Matematico/CursoMatIV");  
+    }
 
 
 
@@ -38,17 +42,17 @@ export default function Nav () {
       Home</a>
   </li>
   <li className="nav-item dropdown active">
-    <a onClick={goCursoMatI} className="nav-link dropdown-toggle color-new" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Matemática I</a>
+    <a onClick={goCursoMatI} className="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Matemática I</a>
   </li>
   <li className="nav-item dropdown active">
-    <a onClick={goCursos} className="nav-link dropdown-toggle color-new" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Matemática III</a>
+    <a onClick={goMatIII} className="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Matemática III</a>
   </li> 
    <li className="nav-item dropdown active">
-    <a className="nav-link dropdown-toggle color-new" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Matemática IV</a>
-    <ul className="dropdown-menu">
+    <a onClick={goMatIV} className="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Matemática IV</a>
+    {/* <ul className="dropdown-menu">
       <li><a onClick={goCursoMatI} className="dropdown-item" href="#">Documentos</a></li>
       <li><a onClick={goCursos}  className="dropdown-item" href="#">Videos</a></li>
-    </ul>
+    </ul> */}
   </li>
 </ul>
 
