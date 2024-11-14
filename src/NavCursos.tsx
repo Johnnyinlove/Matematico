@@ -39,7 +39,7 @@ export default function Nav () {
   <li className="nav-item  ">
     <a onClick={ReturnHome} className="nav-link active" aria-current="page" href="#">
       <img src={svg} alt="svg" />
-      Home</a>
+      Inicio</a>
   </li>
   <li className="nav-item dropdown active">
     <a onClick={goCursoMatI} className="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Matemática I</a>
@@ -58,7 +58,6 @@ export default function Nav () {
 
 </nav>
 
-<SliderMat/>
 
 </>
 

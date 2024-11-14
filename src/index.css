@@ -207,12 +207,27 @@ text-align: center; /*para alinear en el centro*/
 
 
 .with{
-  width: 10%;
-  animation: gif-move infinite 1s;
   -webkit-animation: gif-move infinite 1s;
+  animation: gif-move infinite 1s;
+  width:50px;  
+  height:50px; 
 }
-  
+.footer {  
+  /* position: fixed;   */
+  left:0;  
+  bottom:0;  
+  width:100%;  
+  background-color: #333;  
+  color: white;  
+  text-align: center;  
+  padding:10px;  
+  }
 
+
+.witha{
+  -webkit-animation: gif-move infinite 1s;
+  animation: gif-move infinite 1s;
+}
 .with:hover{
   animation: gif-brich infinite 2s;
   border-radius: 50%;

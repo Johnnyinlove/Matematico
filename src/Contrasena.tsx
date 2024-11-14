@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 
 export default function Segurity () {
-  const [password, setPassword] = useState('');  
+  const [password, setPassword] = useState(String);  
   const navigate = useNavigate();  
 
-  const ReturnHome = (e:any) => {  
+  const GoEconomia = (e:any) => {  
     e.preventDefault(); // Evita el comportamiento por defecto del formulario  
 
     if (password === 'Abc123') {  
@@ -41,7 +41,7 @@ export default function Segurity () {
   
   </div>
   <div className="col-auto">
-    <button type="submit" onClick={ReturnHome} className="btn btn-primary mb-3">Aceptar</button>
+    <button type="submit" onClick={GoEconomia} className="btn btn-primary mb-3">Aceptar</button>
   </div>
 </form>
 </div>

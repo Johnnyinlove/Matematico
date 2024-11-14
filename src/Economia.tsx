@@ -1,5 +1,5 @@
 
- import Economiaq from '../public/Economia.pdf';  
+ import Economiaq from '/Economia.pdf';  
 
 export default function Economia() {
     return(
@@ -13,7 +13,7 @@ export default function Economia() {
 <div className="container-sm color-primary">
 <div>
   <div className='btn btn-primary'>
-    <a className="fs-6 text-light"  href={Economiaq} target="_blank" rel="noopener"> 
+    <a className="fs-6 text-light"  href={Economiaq} target="_blank" rel="noopener noreferrer"> 
     Ver Registro
     </a>
   </div>

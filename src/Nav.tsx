@@ -10,15 +10,20 @@ export default function Nav () {
    navigate("/Matematico/Home");  
    }
 
-   const goHorario =()=> {
-   navigate("/Matematico/Horario");  
-   }
    
-   const goMatIII =()=> {
-   navigate("/Matematico/CursoMatIII");  
+   const goCursos =()=> {
+   navigate("/Matematico/Cursos");  
    }
 
    const goAutor =()=> {
+    navigate("/Matematico/Autor");  
+    }
+
+   const goRepasoM =()=> {
+    navigate("/Matematico/Autor");  
+    }
+
+   const goWebs =()=> {
     navigate("/Matematico/Autor");  
     }
 
@@ -48,7 +53,7 @@ export default function Nav () {
   Profesor
   </button>
   <ul className="dropdown-menu">
-    <li><a onClick={goMatIII} className="dropdown-item" href="#">Matematica</a></li>
+    <li><a onClick={goCursos} className="dropdown-item" href="#">Matematica</a></li>
      </ul>
 </div>   
     <div className="btn-group dropend">
@@ -56,7 +61,7 @@ export default function Nav () {
   Repasador
   </button>
   <ul className="dropdown-menu">
-    <li><a onClick={goMatIII} className="dropdown-item" href="#">Matematica</a></li>
+    <li><a onClick={goRepasoM} className="dropdown-item" href="#">Matematica</a></li>
     <li><a className="dropdown-item" href="#">Ingles</a></li>
     <li><a className="dropdown-item" href="#">Informatica</a></li>
     <li><a className="dropdown-item" href="#">Fisica</a></li>
@@ -69,7 +74,7 @@ export default function Nav () {
   Programador
   </button>
   <ul className="dropdown-menu">
-    <li><a onClick={goMatIII} className="dropdown-item" href="#">Web</a></li>
+    <li><a onClick={goWebs} className="dropdown-item" href="#">Web</a></li>
     {/* <li><a className="dropdown-item" href="#">Web</a></li> */}
     {/* <li><a className="dropdown-item" href="#">Informatica</a></li> */}
   </ul>

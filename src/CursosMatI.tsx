@@ -55,27 +55,6 @@ return (
 
 <nav className="bg-success p-2 text-dark bg-opacity-25">
 
-<button type="button" className="btn margin-top-bottom btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Indicaciones
-</button>
-
-<div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h1 className="modal-title fs-5" id="exampleModalLabel">Que hago?</h1>
-        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div className="modal-body">
-        En esta seccion podrás encontrar las conferencias tocante al curso de Matematica I de la Universidad de Ciego de Avila
-      </div>
-      <div className="modal-footer">
-        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" className="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 {/* <p>

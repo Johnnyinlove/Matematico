@@ -104,7 +104,7 @@ Básico: English
 
       <span className=" rounded-pill text-center-min">
     <a href="https://www.linkedin.com/in/john-manito-bb4b02259"  rel='noopener' target="_blank">
-    <img className="with" src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt="img" />
+    <img className="with img-fluid rounded-circle"  src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt="img" />
       </a>
 
     <div className="ms-2 me-auto">

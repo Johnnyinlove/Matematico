@@ -11,7 +11,7 @@ export default function Footer() {
 return(
 <>
 
-<footer className="bg-primary border border-primary">
+<footer className=" footer bg-primary border border-primary">
 
 
 
