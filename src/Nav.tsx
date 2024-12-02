@@ -27,6 +27,10 @@ export default function Nav () {
     navigate("/Matematico/Autor");  
     }
 
+   const goMusico =()=> {
+    navigate("/Matematico/Musica");  
+    }
+
 
 
     return(
@@ -75,6 +79,17 @@ export default function Nav () {
   </button>
   <ul className="dropdown-menu">
     <li><a onClick={goWebs} className="dropdown-item" href="#">Web</a></li>
+    {/* <li><a className="dropdown-item" href="#">Web</a></li> */}
+    {/* <li><a className="dropdown-item" href="#">Informatica</a></li> */}
+  </ul>
+</div>
+
+<div className="btn-group dropend">
+  <button type="button" className="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  Musica
+  </button>
+  <ul className="dropdown-menu">
+    <li><a onClick={goMusico} className="dropdown-item" href="#">Acordes</a></li>
     {/* <li><a className="dropdown-item" href="#">Web</a></li> */}
     {/* <li><a className="dropdown-item" href="#">Informatica</a></li> */}
   </ul>
