@@ -54,10 +54,10 @@ return (
 <nav className="bg-success p-2 text-dark bg-opacity-25">
 
 
-<h1>Conferencias</h1>
+<h1 className="text-center">Conferencias</h1>
 
 
-  <h2>Series Numericas</h2>
+  <h2 className="text-center">Series Numericas</h2>
 
   <Container className="mt-5">  <div className="d-flex"> {!isMobile ? (  
  <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="350" src={Numericas}  
@@ -81,7 +81,7 @@ return (
 
 
 
-  <h2>Series de Potencias</h2>
+  <h2 className="text-center">Series de Potencias</h2>
 
   <Container className="mt-5">  <div className="d-flex"> {!isMobile ? (  
  <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="350" src={Potencia}  
@@ -103,7 +103,7 @@ return (
 
 
 
-<h2>Ecuaciones diferenciales de Primer Orden</h2>
+<h2 className="text-center">Ecuaciones diferenciales de Primer Orden</h2>
 
 <Container className="mt-5">  <div className="d-flex"> {!isMobile ? (  
  <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="350" src={Edo}  
@@ -123,7 +123,7 @@ return (
 
 
 
-<h2>Ecuaciones diferenciales de Orden Superior</h2>
+<h2 className="text-center">Ecuaciones diferenciales de Orden Superior</h2>
 
 <Container className="mt-5">  <div className="d-flex"> {!isMobile ? (  
  <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="350" src={EdoN}  
@@ -142,7 +142,7 @@ return (
 </Container>
 
 
-<h2>Sistema de Ecuaciones Diferenciales Lineales</h2>
+<h2 className="text-center">Sistema de Ecuaciones Diferenciales Lineales</h2>
 
 
 
@@ -164,7 +164,7 @@ return (
 </div>
 </Container>
 
-<h2 className="text-danger">Ejemplo de Prueba Final</h2>
+<h2 className="text-danger text-center">Ejemplo de Prueba Final</h2>
 
 
 
