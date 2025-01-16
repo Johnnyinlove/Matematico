@@ -157,7 +157,7 @@ return (
 </div>
   <div className="margin-top-bottom">
     <div className='btn btn-primary'>
-      <a className="fs-6 text-light"  href={Sledo} target="_blank" rel="noopener noreferrer" download="Prueba Final Matematica III.pdf"> 
+      <a className="fs-6 text-light"  href={Sledo} target="_blank" rel="noopener noreferrer" download="Conferencia de Sistema Lineal EDO.pdf"> 
       Descargar PDF
       </a>
     </div>

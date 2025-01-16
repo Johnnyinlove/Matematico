@@ -79,8 +79,6 @@ export default function Nav () {
   </button>
   <ul className="dropdown-menu">
     <li><a onClick={goWebs} className="dropdown-item" href="#">Web</a></li>
-    {/* <li><a className="dropdown-item" href="#">Web</a></li> */}
-    {/* <li><a className="dropdown-item" href="#">Informatica</a></li> */}
   </ul>
 </div>
 
@@ -90,8 +88,6 @@ export default function Nav () {
   </button>
   <ul className="dropdown-menu">
     <li><a onClick={goMusico} className="dropdown-item" href="#">Acordes</a></li>
-    {/* <li><a className="dropdown-item" href="#">Web</a></li> */}
-    {/* <li><a className="dropdown-item" href="#">Informatica</a></li> */}
   </ul>
 </div>
     

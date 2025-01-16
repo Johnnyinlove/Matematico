@@ -1,5 +1,6 @@
-import React, { useState } from 'react';  
-import { useNavigate } from "react-router-dom";  
+import React, { useState, useEffect } from 'react';  
+import { useNavigate } from "react-router-dom"; 
+import { songsData  } from "./Songs"; 
 
 const SongSearch: React.FC = () => {  
     const navigate = useNavigate();  
@@ -17,16 +18,21 @@ const SongSearch: React.FC = () => {
     const [worshipType, setWorshipType] = useState('');  
     const [isInfoSaved, setIsInfoSaved] = useState(false); // Estado para gestionar la información guardada  
 
-    // Definimos un objeto con canciones y sus acordes  
-    const songsData = [  
-        { title: 'Gracias', chords: '//Am F G// C G Dm Am C G F', autor: 'Marcos Witt' },  
-        { title: 'Gracias Señor por la Vida que me has dado', chords: 'C G Am F G C C7 //F G C Am F G C C7//' },  
-        { title: 'Hay Libertad en la Casa de Dios', chords: 'F#m D A E', autor: 'Marcos Witt' },  
-        { title: 'Los Muros caen', chords: '//Am G// F G C Am E //Am G Am E Am//' },  
-        { title: 'Alaba a Dios', chords: 'G, Em, Am, D' },  
-        { title: 'Tu Fidelidad des Grande', chords: 'C, F, G, C, C7, Am, Dm, F, G, C' },  
-    ];  
 
+    // Ejemplo de recuperación de datos desde el local storage  
+// const savedUserName = localStorage.getItem('userName');  
+// const savedDayOfWeek = localStorage.getItem('dayOfWeek');  
+
+// // Puedes establecer estos valores en los estados al inicializar el componente:  
+// useEffect(() => {  
+//     if (savedUserName) {  
+//         setUserName(savedUserName);  
+//     }  
+//     if (savedDayOfWeek) {  
+//         setDayOfWeek(savedDayOfWeek);  
+//     }  
+// }, []);
+    
     // Filtrar las canciones que coinciden con la búsqueda del usuario y ordenarlas alfabéticamente  
     const filteredSongs = songsData  
         .filter(song => song.title.toLowerCase().includes(query.toLowerCase()))  
@@ -51,12 +57,17 @@ const SongSearch: React.FC = () => {
         setSelectedSongs([]);  
     };  
 
-    // Manejar el guardado de información del usuario  
-    const handleSaveInfo = () => {  
-        if (userName && dayOfWeek && worshipType) {  
-            setIsInfoSaved(true);  
-        }  
-    };  
+// Manejar el guardado de información del usuario  
+const handleSaveInfo = () => {  
+    if (userName && dayOfWeek && worshipType) {  
+        // Guardar en local storage  
+        // localStorage.setItem('userName', userName);  
+        // localStorage.setItem('dayOfWeek', dayOfWeek);  
+        // localStorage.setItem('worshipType', worshipType); // Si también quieres guardar esto  
+        
+        setIsInfoSaved(true);  
+    }  
+}; 
 
     return (  
         <div className="container mt-5">  
@@ -74,7 +85,7 @@ const SongSearch: React.FC = () => {
                     </div>  
                 </div>  
             ) : ( // Cuadro superpuesto para los datos del usuario  
-                <div className="overlay rounded p-4 bg-light" style={{ position: 'absolute', top: '20%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 99 }}>  
+                <div className="overlay rounded p-4 pt-5 bg-light" style={{ position: 'absolute', top: '20%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 99 }}>  
                     <h3>Ingresar Información</h3>  
                     <input  
                         type="text"  
@@ -97,7 +108,7 @@ const SongSearch: React.FC = () => {
                         value={worshipType}  
                         onChange={(e) => setWorshipType(e.target.value)}  
                     />  
-                    <button className="btn btn-primary" onClick={handleSaveInfo}>  
+                    <button className=" btn-gradient" onClick={handleSaveInfo}>  
                         Guardar  
                     </button>  
                 </div>  
@@ -140,6 +151,7 @@ const SongSearch: React.FC = () => {
 
             <div className="mt-4">  
                 <h3>Programa del {dayOfWeek}</h3>  
+                <h4>Dirige {userName}</h4>  
                 {selectedSongs.length === 0 ? (  
                     <p>No hay canciones seleccionadas.</p>  
                 ) : (  
