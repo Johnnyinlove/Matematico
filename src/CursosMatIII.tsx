@@ -56,6 +56,7 @@ return (
 
 <h1 className="text-center">Conferencias</h1>
 
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
   <h2 className="text-center">Series Numericas</h2>
 
@@ -74,11 +75,13 @@ return (
     </div>
 </div>
 </Container>
+</div>
 
 
 
 
 
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
 
   <h2 className="text-center">Series de Potencias</h2>
@@ -98,9 +101,11 @@ return (
     </div>
 </div>
 </Container>
+</div>
 
 
 
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
 
 <h2 className="text-center">Ecuaciones diferenciales de Primer Orden</h2>
@@ -120,7 +125,11 @@ return (
     </div>
 </div>
 </Container>
+</div>
 
+
+
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
 
 <h2 className="text-center">Ecuaciones diferenciales de Orden Superior</h2>
@@ -141,6 +150,15 @@ return (
 </div>
 </Container>
 
+</div>
+
+
+
+
+
+
+
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
 <h2 className="text-center">Sistema de Ecuaciones Diferenciales Lineales</h2>
 
@@ -163,6 +181,15 @@ return (
     </div>
 </div>
 </Container>
+</div>
+
+
+
+
+
+
+
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
 <h2 className="text-danger text-center">Ejemplo de Prueba Final</h2>
 
@@ -183,7 +210,8 @@ return (
     </div>
 </div>
 </Container>
- 
+</div>
+
 
 
 

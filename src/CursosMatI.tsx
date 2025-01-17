@@ -79,6 +79,7 @@ return (
 
 <h1>Conferencias</h1>
 
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
   <h2>Teoria de Conjunto</h2>
 
@@ -98,11 +99,13 @@ return (
       </a>
     </div>
 </div>
+</div>
 
 
 
 
 
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
   <h2>Logica Matematica</h2>
 
@@ -123,9 +126,11 @@ return (
       </a>
     </div>
 </div>
+</div>
 
 
 
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
 <h2>Ecuaciones diferenciales de Primer Orden</h2>
 
@@ -146,7 +151,10 @@ return (
       </a>
     </div>
 </div>
+</div>
 
+
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
 <h2>Ecuaciones diferenciales de Orden Superior</h2>
 
@@ -166,6 +174,10 @@ return (
       </a>
     </div>
 </div>
+</div>
+
+
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
 
 <h2>Sistema de Ecuaciones Diferenciales Lineales</h2>
@@ -185,6 +197,7 @@ return (
       Descargar PDF
       </a>
     </div>
+</div>
 </div>
 
 

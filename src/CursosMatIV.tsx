@@ -56,6 +56,7 @@ return (
 
 <h1 className="text-center">Conferencias</h1>
 
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
   <h2 className="text-center">Teoria de Error y Solución de Ecuaciones</h2>
 
@@ -74,12 +75,14 @@ return (
     </div>
 </div>
 </Container>
+</div>
 
 
 
 
 
 
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
   <h2 className="text-center">Aproximación de Funciones</h2>
 
@@ -98,10 +101,12 @@ return (
     </div>
 </div>
 </Container>
+</div>
 
 
 
 
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
 <h2 className="text-center">Integración Numérica</h2>
 
@@ -120,7 +125,12 @@ return (
     </div>
 </div>
 </Container>
+</div>
 
+
+
+
+<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
 
 <h2 className="text-danger text-center">Trabajos Finales</h2>
 
@@ -158,6 +168,7 @@ return (
 </div>
 </Container>
  
+</div>
 
 
 
