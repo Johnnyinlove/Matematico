@@ -8,7 +8,7 @@ export default function Nav () {
   const navigate=useNavigate()
 
    const ReturnHome =()=> {
-   navigate("/Matematico/Home");  
+   navigate("/Matematico/");  
    }
 
    const goCursoMatI =()=> {
