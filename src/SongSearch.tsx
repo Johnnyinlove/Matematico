@@ -78,7 +78,7 @@ const handleSaveInfo = () => {
                     <div className="row">  
                         <div className="col-6 mx-auto text-center">  
                             <h4>Programa del Culto</h4>  
-                            <h5>Levista: {userName}</h5>  
+                            <h5>Levita: {userName}</h5>  
                             <h5>Día: {dayOfWeek}</h5>  
                             <h5>Culto: {worshipType}</h5>  
                         </div>  
