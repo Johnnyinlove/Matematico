@@ -1,40 +1,43 @@
 import  "./index.css"
-import {useEffect, useState} from 'react'
+// import React from 'react'
 import ReactPlayer from 'react-player'
-import NavCursos from './NavCursos'
-import FinalCD from "../public/matIV/Final_Numerica_CD.pdf";
-import FinalCDph from "../public/matIV/FinalCD.png";
-import FinalCPE from "../public/matIV/Final_Numerica_CPE.pdf";
-import FinalCPEph from "../public/matIV/FinalCPE.png";
-import SolEcua from "../public/matIV/Conferencia_Solucion_Ecuaciones.pdf"
-import SolEcuaph from "../public/matIV/solEcua.png"
-import AjusteDatos from "../public/matIV/Conferencia_Aproximacion_Funciones.pdf"
-import AjusteDatosph from "../public/matIV/AproximacionFunciones.png"
-import IntegraNum from "../public/matIV/Conferencia_Integracion_Numerica.pdf"
-import IntegraNumph from "../public/matIV/IntegracionNumerica.png"
-import { Document, Page } from 'react-pdf'; 
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import { Container, Row, Col } from "react-bootstrap";  
-export default function Cursos () {
+import Nav from './Nav'
+import Footer from './Footer'
+import Conjunto from "../public/matI/conjunto/Conferencia_Conjunto.pdf";
+import Potencia from "/Conferencia_Series_de_Potencia.pdf";
+import Edo from "/Conferencia_EDO.pdf";
+import EdoN from "/Conferencia_EDO_N.pdf";
+import Sledo from "/Conferencia_SLEDO.pdf";
+
+export default function CursosMatI () {
 
 
-  // prueba de un resposive de la imgen pdf
-  const [isMobile, setIsMobile] = useState(false); // Estado para identificar si es móvil 
-
-  useEffect(() => {  
-    const handleResize = () => {  
-    setIsMobile(window.innerWidth <768); // Cambia768 por el ancho deseado para móviles 
-    };  
-   
-    handleResize(); // Inicializa en caso de que ya esté en móvil
-     window.addEventListener('resize', handleResize);  
-   
-    return () => window.removeEventListener('resize', handleResize);  
-    },[]);  
-
- 
+  const Copy =()=>{
+    
+      let copy=document.getElementById('liveToastBtn');
+      let copytext=copy?.innerText;
+let copytexttext =copytext?.toString();
+      // console.log(copytext);
+    navigator.clipboard.writeText(copytexttext!);
+    alert("Copiado al portapapeles");
 
 
+  }
+
+
+    // Función para copiar la URL actual al portapapeles
+    const copiarUrl=()=> {
+      const urlActual = window.location.href;
+
+      navigator.clipboard.writeText(urlActual)
+        .then(() => {
+          alert('¡URL copiada al portapapeles!');
+        })
+        .catch((error) => {
+          console.error('Error al copiar URL: ', error);
+          alert('Hubo un error al intentar copiar la URL.');
+        });
+    }
 
 
 
@@ -42,144 +45,121 @@ export default function Cursos () {
 
 
 return (
+    <>
+      <Nav />
+      <div className="container py-5">
+        <div className="text-center mb-5">
+          <h1 className="display-4 fw-bold text-primary">Matemática I</h1>
+          <p className="lead">Conferencias detalladas sobre los temas fundamentales de Matemática I. Descarga los PDFs para estudiar a tu ritmo.</p>
+        </div>
 
-<>
+        <div className="row">
+          <div className="col-lg-6 mb-4">
+            <div className="card h-100 shadow">
+              <div className="card-body">
+                <h5 className="card-title">
+                  <i className="bi bi-file-earmark-pdf me-2 text-danger"></i>
+                  Teoría de Conjunto
+                </h5>
+                <p className="card-text">Fundamentos de la teoría de conjuntos, operaciones básicas y conceptos fundamentales.</p>
+                <div className="d-flex gap-2">
+                  <a href={Conjunto} target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
+                    <i className="bi bi-eye me-1"></i>Ver PDF
+                  </a>
+                  <a href={Conjunto} download="Conferencia_Conjunto.pdf" className="btn btn-primary">
+                    <i className="bi bi-download me-1"></i>Descargar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6 mb-4">
+            <div className="card h-100 shadow">
+              <div className="card-body">
+                <h5 className="card-title">
+                  <i className="bi bi-file-earmark-pdf me-2 text-danger"></i>
+                  Lógica Matemática
+                </h5>
+                <p className="card-text">Introducción a la lógica matemática, proposiciones, cuantificadores y demostraciones.</p>
+                <div className="d-flex gap-2">
+                  <a href={Potencia} target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
+                    <i className="bi bi-eye me-1"></i>Ver PDF
+                  </a>
+                  <a href={Potencia} download="Conferencia_Series_de_Potencia.pdf" className="btn btn-primary">
+                    <i className="bi bi-download me-1"></i>Descargar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6 mb-4">
+            <div className="card h-100 shadow">
+              <div className="card-body">
+                <h5 className="card-title">
+                  <i className="bi bi-file-earmark-pdf me-2 text-danger"></i>
+                  Ecuaciones Diferenciales de Primer Orden
+                </h5>
+                <p className="card-text">Métodos de resolución de ecuaciones diferenciales ordinarias de primer orden.</p>
+                <div className="d-flex gap-2">
+                  <a href={Edo} target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
+                    <i className="bi bi-eye me-1"></i>Ver PDF
+                  </a>
+                  <a href={Edo} download="Conferencia_EDO.pdf" className="btn btn-primary">
+                    <i className="bi bi-download me-1"></i>Descargar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6 mb-4">
+            <div className="card h-100 shadow">
+              <div className="card-body">
+                <h5 className="card-title">
+                  <i className="bi bi-file-earmark-pdf me-2 text-danger"></i>
+                  Ecuaciones Diferenciales de Orden Superior
+                </h5>
+                <p className="card-text">Técnicas para ecuaciones diferenciales de orden n, incluyendo métodos de reducción.</p>
+                <div className="d-flex gap-2">
+                  <a href={EdoN} target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
+                    <i className="bi bi-eye me-1"></i>Ver PDF
+                  </a>
+                  <a href={EdoN} download="Conferencia_EDO_N.pdf" className="btn btn-primary">
+                    <i className="bi bi-download me-1"></i>Descargar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6 mb-4">
+            <div className="card h-100 shadow">
+              <div className="card-body">
+                <h5 className="card-title">
+                  <i className="bi bi-file-earmark-pdf me-2 text-danger"></i>
+                  Sistema de Ecuaciones Diferenciales Lineales
+                </h5>
+                <p className="card-text">Análisis y resolución de sistemas de ecuaciones diferenciales lineales.</p>
+                <div className="d-flex gap-2">
+                  <a href={Sledo} target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
+                    <i className="bi bi-eye me-1"></i>Ver PDF
+                  </a>
+                  <a href={Sledo} download="Conferencia_SLEDO.pdf" className="btn btn-primary">
+                    <i className="bi bi-download me-1"></i>Descargar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-
-
-
-
-<NavCursos/>
-
-<nav className="bg-success p-2 text-dark  bg-opacity-25">
-
-
-<h1 className="text-center">Conferencias</h1>
-
-<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
-
-  <h2 className="text-center">Teoria de Error y Solución de Ecuaciones</h2>
-
-  <Container className="mt-5">  <div className="d-flex"> {!isMobile ? (  
- <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="350" src={SolEcua}  
- style={{ border: 'none'}}  />  
- ) : (  
- <img alt="snsmx"src={SolEcuaph} className="w-100 h-auto border-5" />  
- )} 
-</div>
-  <div className="margin-top-bottom">
-    <div className='btn btn-primary'>
-      <a className="fs-6 text-light"  href={SolEcua} target="_blank" rel="noopener noreferrer" download="Conferencia de Solucion de Ecuaciones.pdf"> 
-      Descargar PDF
-      </a>
-    </div>
-</div>
-</Container>
-</div>
-
-
-
-
-
-
-<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
-
-  <h2 className="text-center">Aproximación de Funciones</h2>
-
-  <Container className="mt-5">  <div className="d-flex"> {!isMobile ? (  
- <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="350" src={AjusteDatos}  
- style={{ border: 'none'}}  />  
- ) : (  
- <img alt="snsmx"src={AjusteDatosph} className="w-100 h-auto border-5" />  
- )} 
-</div>
-  <div className="margin-top-bottom">
-    <div className='btn btn-primary'>
-      <a className="fs-6 text-light"  href={AjusteDatos} target="_blank" rel="noopener noreferrer" download="Conferencia de Aproximación de Funciones.pdf"> 
-      Descargar PDF
-      </a>
-    </div>
-</div>
-</Container>
-</div>
-
-
-
-
-<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
-
-<h2 className="text-center">Integración Numérica</h2>
-
-<Container className="mt-5">  <div className="d-flex"> {!isMobile ? (  
- <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="350" src={IntegraNum}  
- style={{ border: 'none'}}  />  
- ) : (  
- <img alt="snsmx"src={IntegraNumph} className="w-100 h-auto border-5" />  
- )} 
-</div>
-  <div className="margin-top-bottom">
-    <div className='btn btn-primary'>
-      <a className="fs-6 text-light"  href={IntegraNum} target="_blank" rel="noopener noreferrer" download="Conferencia de EDO.pdf"> 
-      Descargar PDF
-      </a>
-    </div>
-</div>
-</Container>
-</div>
-
-
-
-
-<div className="border margin-top-bottom border-2 border-opacity-100 border-secondary bg-body rounded-3">
-
-<h2 className="text-danger text-center">Trabajos Finales</h2>
-
-
-
-<Container className="mt-5">  <div className="d-flex"> {!isMobile ? (  
- <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="400" src={FinalCD}  
- style={{ border: 'none'}}  />  
- ) : (  
- <img alt="snsmx"src={FinalCDph} className="w-100 h-auto border-5" />  
- )} 
-</div>
-  <div className="margin-top-bottom">
-    <div className='btn btn-primary'>
-      <a className="fs-6 text-light"  href={FinalCD} target="_blank" rel="noopener noreferrer" download="Prueba Final Matematica III.pdf"> 
-      Descargar CD
-      </a>
-    </div>
-</div>
-</Container>
-
-<Container className="mt-5">  <div className="d-flex"> {!isMobile ? (  
- <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="400" src={FinalCPE}  
- style={{ border: 'none'}}  />  
- ) : (  
- <img alt="snsmx"src={FinalCPEph} className="w-100 h-auto border-5" />  
- )} 
-</div>
-  <div className="margin-top-bottom">
-    <div className='btn btn-primary'>
-      <a className="fs-6 text-light"  href={FinalCPE} target="_blank" rel="noopener noreferrer" download="Prueba Final Matematica III.pdf"> 
-      Descargar CPE
-      </a>
-    </div>
-</div>
-</Container>
- 
-</div>
-
-
-
-
-</nav>
-
-
-</>
-
-
-
-
-);
+        <div className="text-center mt-5">
+          <div className="alert alert-info" role="alert">
+            <i className="bi bi-info-circle me-2"></i>
+            <strong>Nota:</strong> Estas conferencias están diseñadas para complementar tus estudios. Para clases personalizadas, contáctame.
+          </div>
+          <button className="btn btn-success btn-lg">Solicitar Clase Personalizada</button>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
 }

@@ -18,15 +18,17 @@ function Autor() {
   return (
     <>
 
-
+{/*  */}
 
     <div className='App'>
 
-    <div className="card mb-3"  >
-    <a onClick={ReturnHome} href="#" className="btn btn-primary">Inicio</a>
-    <p className="fw-bolder text-center fs-2 ">Sobre mi</p>
-    <div className="grid text-center container-sm">
-      <img src={yo} className="img-fluid col-md-4 rounded-start" alt="yo"/>
+    <div className="card mb-3 shadow-lg">
+    <a onClick={ReturnHome} href="#" className="btn btn-primary position-absolute top-0 start-0 m-3">← Inicio</a>
+    <div className="text-center py-4 bg-light">
+      <img src={yo} className="img-fluid rounded-circle mb-3" style={{width: '150px', height: '150px', objectFit: 'cover', border: '5px solid rgba(0, 123, 255, 0.4)'}} alt="Perfil de Juan"/>
+      <h1 className="display-5 fw-bold text-primary">Juan Cruz Oduardo</h1>
+      <p className="lead text-muted">Profesor de Matemática | Experto en Enseñanza Personalizada</p>
+      <p className="text-secondary">Ayudando a estudiantes a dominar las matemáticas con pasión y dedicación.</p>
     </div>
 
 
@@ -41,35 +43,70 @@ function Autor() {
     <div className="card">
     <div className="card-body">
         <h5 className="card-title">Nivel Académico</h5>
-        <p className="card-text">
-        Licenciado en Matemática, de la Universidad de Oriente, Santiago de 
-Cuba.
-
-        </p>
+        <div className="card-text">
+          <div className="d-flex align-items-center mb-2">
+            <i className="bi bi-mortarboard me-2 text-primary" style={{fontSize: '1.2em'}}></i>
+            <strong>Licenciado en Matemática</strong>
+          </div>
+          <p className="mb-0">Universidad de Oriente, Santiago de Cuba, Cuba.</p>
+        </div>
 
 <hr />
         <h5 className="card-title"> Habilidades informáticas </h5>
-        <p className="card-text">
-
-Medio: Microsoft Office: Word, PowerPoint, Excel.<br/>
-
-Básico: C++, Linux, Wolfram Mathematica, HTML, CSS, JavaScript, 
-Typescript. <br/>
-
-Medio: LATEX, Microsoft Windows, Redes Sociales e Internet.
-        </p>
-        <a className="btn abc btn-primary" href="https://johnnyinlove.d3i5negfn33i3u.amplifyapp.com/" role="button">Primera Web</a>
-        <a className="btn abc btn-primary" href="https://johnnyreact.d3if6eo00snogl.amplifyapp.com/" role="button">Segunda Web</a>
+        <div className="card-text">
+          <div className="mb-3">
+            <strong>Microsoft Office (Word, PowerPoint, Excel):</strong> Medio
+            <div className="progress mt-1" style={{height: '25px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <div className="progress-bar" style={{width: '60%', background: 'linear-gradient(45deg, #87ceeb, #4682b4)', borderRadius: '10px', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 0 0 5px rgba(135,206,235,0.5)'}}>60%</div>
+            </div>
+          </div>
+          <div className="mb-3">
+            <strong>Programación (C++, Linux, Wolfram Mathematica, HTML, CSS, JavaScript, TypeScript):</strong> Básico
+            <div className="progress mt-1" style={{height: '25px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <div className="progress-bar" style={{width: '30%', background: 'linear-gradient(45deg, #00bfff, #1e90ff)', borderRadius: '10px', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 0 0 5px rgba(0,191,255,0.5)'}}>30%</div>
+            </div>
+          </div>
+          <div className="mb-3">
+            <strong>Herramientas (LATEX, Microsoft Windows, Redes Sociales e Internet):</strong> Medio
+            <div className="progress mt-1" style={{height: '25px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <div className="progress-bar" style={{width: '60%', background: 'linear-gradient(45deg, #4169e1, #000080)', borderRadius: '10px', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 0 0 5px rgba(65,105,225,0.5)'}}>60%</div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-3">
+          <a className="btn btn-outline-primary me-2" href="https://johnnyinlove.d3i5negfn33i3u.amplifyapp.com/" role="button" target="_blank" rel="noopener noreferrer">Primera Web</a>
+          <a className="btn btn-outline-primary me-2" href="https://johnnyreact.d3if6eo00snogl.amplifyapp.com/" role="button" target="_blank" rel="noopener noreferrer">Segunda Web</a>
+          <a className="btn btn-outline-primary" href="https://johnnyinlove.github.io/RIIBA/" role="button" target="_blank" rel="noopener noreferrer">Cuarta Web</a>
+        </div>
 
 
 <hr />
         <h5 className="card-title"> Habilidades lingüisticas </h5>
-        <p className="card-text">
-Materna: Español. <br/>
-Básico: English
-        </p>
+        <div className="card-text">
+          <div className="mb-2">
+            <strong>Español:</strong> Materna
+            <div className="progress mt-1" style={{height: '25px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <div className="progress-bar" style={{width: '100%', background: 'linear-gradient(45deg, #4169e1, #000080)', borderRadius: '10px', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 0 0 5px rgba(135,206,235,0.5)'}}>100%</div>
+            </div>
+          </div>
+          <div className="mb-2">
+            <strong>Portugués:</strong> Medio
+            <div className="progress mt-1" style={{height: '25px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <div className="progress-bar" style={{width: '60%', background: 'linear-gradient(45deg, #00bfff, #1e90ff)', borderRadius: '10px', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 0 0 5px rgba(0,191,255,0.5)'}}>60%</div>
+            </div>
+          </div>
+          <div className="mb-2">
+            <strong>English:</strong> Básico
+            <div className="progress mt-1" style={{height: '25px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+              <div className="progress-bar" style={{width: '30%', background: 'linear-gradient(45deg, #87ceeb, #4682b4)', borderRadius: '10px', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 0 0 5px rgba(65,105,225,0.5)'}}>30%</div>
+            </div>
+          </div>
+        </div>
 
-        {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
+        <div className="text-center mt-4">
+          <h4 className="text-primary">¡Transforma tu futuro matemático hoy!</h4>
+          <p className="text-muted">Clases personalizadas adaptadas a tu ritmo y necesidades.</p>
+        </div>
       </div>
 
     </div>
@@ -79,70 +116,54 @@ Básico: English
 
       <div className="card-body grid text-center">
 
-    <h5 className="card-title">Contáctame!!</h5>
-
-      <span className=" rounded-pill text-center-min">
-    <a href="https://www.facebook.com/juan.cruzoduardo"  rel='noopener' target="_blank">
-    <img className="with" src="https://cdn.icon-icons.com/icons2/642/PNG/512/facebook_icon-icons.com_59205.png" alt="img" />
-      </a>
-
-      <div className="ms-2 me-auto">
-      <div className="fw-bold">Facebook</div>
+    <h5 className="card-title text-center mb-4">Contáctame y Reserva tu Clase</h5>
+    <div className="row g-3 justify-content-center">
+      <div className="col-6 col-md-3">
+        <a href="https://wa.me/5356908535/?text=Olá%20Juan!%20Vi%20seu%20anúncio%20e%20tenho%20interesse%20nas%20aulas%20de%20matemática." className="btn btn-success btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-whatsapp fs-1 mb-2"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+      <div className="col-6 col-md-3">
+        <a href="https://www.facebook.com/juan.cruzoduardo" className="btn btn-primary btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-facebook fs-1 mb-2"></i>
+          <span>Facebook</span>
+        </a>
+      </div>
+      <div className="col-6 col-md-3">
+        <a href="https://t.me/Whatwho01" className="btn btn-info btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-telegram fs-1 mb-2"></i>
+          <span>Telegram</span>
+        </a>
+      </div>
+      <div className="col-6 col-md-3">
+        <a href="mailto:johnmanito3@gmail.com" className="btn btn-danger btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-envelope fs-1 mb-2"></i>
+          <span>Email</span>
+        </a>
+      </div>
+      <div className="col-6 col-md-3">
+        <a href="https://www.linkedin.com/in/john-manito-bb4b02259" className="btn btn-secondary btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-linkedin fs-1 mb-2"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      <div className="col-6 col-md-3">
+        <a href="https://github.com/Johnnyinlove" className="btn btn-dark btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-github fs-1 mb-2"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+      <div className="col-6 col-md-3">
+        <a href="https://www.notion.so/Getting-Started-on-Mobile-8d98ea3f4d1441c68f8a9d8bc4e9ba6f?pvs=4" className="btn btn-light btn-lg w-100 d-flex flex-column align-items-center border" target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-file-earmark-text fs-1 mb-2 text-dark"></i>
+          <span>Notion</span>
+        </a>
+      </div>
     </div>
-    </span>
-
-
-      <span className=" rounded-pill text-center-min">
-    <a href="https://t.me/Whatwho01"  rel='noopener' target="_blank">
-    <img className="with" src="https://cdn.icon-icons.com/icons2/923/PNG/512/telegram_icon-icons.com_72055.png" alt="img" />
-      </a>
-    <div className="ms-2 me-auto">
-    <div className="fw-bold">Telegram</div>
-    </div>
-
-    </span>
-
-      <span className=" rounded-pill text-center-min">
-    <a href="https://www.linkedin.com/in/john-manito-bb4b02259"  rel='noopener' target="_blank">
-    <img className="with img-fluid rounded-circle"  src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt="img" />
-      </a>
-
-    <div className="ms-2 me-auto">
-    <div className="fw-bold">Linkedin</div>
-    </div>
-    </span>
-
-      <span className=" rounded-pill text-center-min">
-    <a href="https://github.com/Johnnyinlove"  rel='noopener' target="_blank">
-    <img className="with" src="https://cdn.icon-icons.com/icons2/2368/PNG/96/github_logo_icon_143772.png" alt="img" />
-      </a>
-
-    <div className="ms-2 me-auto">
-    <div className="fw-bold">GitHub</div>
-    </div>
-    </span>
-
-      <span className=" rounded-pill text-center-min">
-    <a href="https://www.notion.so/Getting-Started-on-Mobile-8d98ea3f4d1441c68f8a9d8bc4e9ba6f?pvs=4"  rel='noopener' target="_blank">
-    <img className="with" src="https://cdn.icon-icons.com/icons2/2428/PNG/512/notion_black_logo_icon_147102.png" alt="img" />
-      </a>
-
-    <div className="ms-2 me-auto">
-    <div className="fw-bold">Notion</div>
-    </div>
-    </span>
     
-      <span className=" rounded-pill text-center-min">
-    <a href="mailto:johnmanito3@gmail.com"  rel='noopener' target="_blank">
-    <img className="with" src="https://cdn.icon-icons.com/icons2/2631/PNG/512/gmail_new_logo_icon_159149.png" alt="img" />
-      </a>
-
-    <div className="ms-2 me-auto">
-    <div className="fw-bold">Gmail</div>
-    </div>
-    </span>
+     
   
-
 
       </div>
     </div>

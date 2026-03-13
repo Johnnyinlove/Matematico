@@ -1,54 +1,69 @@
-import  "./index.css"
-// import React from 'react'
-import NavCursos from './NavCursos'
-import Slider from "./Slider";
-import SliderMat from "./SliderMat"
+import "./index.css"
+import Nav from './Nav'
+import Footer from './Footer'
+import { useNavigate } from 'react-router-dom'
 
-export default function Cursos () {
+export default function Cursos() {
+  const navigate = useNavigate()
 
+  const goToMatI = () => navigate('/Matematico/CursoMatI')
+  const goToMatIII = () => navigate('/Matematico/CursoMatIII')
+  const goToMatIV = () => navigate('/Matematico/CursoMatIV')
 
+  return (
+    <>
+      <Nav />
+      <div className="container py-5">
+        <h1 className="text-center mb-5">Catálogo de Cursos</h1>
+        <p className="text-center lead mb-5">Explora mis cursos de matemáticas y otras asignaturas. Cada curso está diseñado para maximizar tu aprendizaje.</p>
 
-return (
+        <div className="row">
+          <div className="col-md-4 mb-4">
+            <div className="card h-100 shadow">
+              <div className="card-body">
+                <h5 className="card-title">Matemática I</h5>
+                <p className="card-text">Fundamentos de matemáticas para estudiantes de nivel básico. Álgebra, geometría y cálculo elemental.</p>
+                <button className="btn btn-primary" onClick={goToMatI}>Ver Detalles</button>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card h-100 shadow">
+              <div className="card-body">
+                <h5 className="card-title">Matemática III</h5>
+                <p className="card-text">Matemáticas avanzadas incluyendo cálculo diferencial, integral y ecuaciones diferenciales.</p>
+                <button className="btn btn-primary" onClick={goToMatIII}>Ver Detalles</button>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div className="card h-100 shadow">
+              <div className="card-body">
+                <h5 className="card-title">Matemática IV</h5>
+                <p className="card-text">Temas avanzados en matemáticas aplicadas, estadística y probabilidad.</p>
+                <button className="btn btn-primary" onClick={goToMatIV}>Ver Detalles</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<>
-
-
-
-
-
-<NavCursos/>
-<SliderMat/>
-<nav className=" px-2 text-dark bg-opacity-25">
-
-<button type="button" className="btn margin-top-bottom btn-outline-info witha" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Indicaciones
-</button>
-
-<div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h1 className="modal-title fs-5" id="exampleModalLabel">Que hago?</h1>
-        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div className="text-center mt-5">
+          <h3>Otras Asignaturas</h3>
+          <p>Además de matemáticas, ofrezco clases en:</p>
+          <ul className="list-inline">
+            <li className="list-inline-item badge bg-secondary fs-6 p-2 m-1">Inglés</li>
+            <li className="list-inline-item badge bg-secondary fs-6 p-2 m-1">Informática</li>
+            <li className="list-inline-item badge bg-secondary fs-6 p-2 m-1">Física</li>
+            <li className="list-inline-item badge bg-secondary fs-6 p-2 m-1">Química</li>
+          </ul>
+          <button className="btn btn-success btn-lg mt-3">Contactar para Más Información</button>
+        </div>
       </div>
-      <div className="modal-body">
-En la parte superior se encuentran la documentación necesaria y suficiente de las asignaturas impartidas por el Lic. Juan Cruz Oduardo en la UNICA      </div>
-      <div className="modal-footer">
-        <button type="button" className="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
-        {/* <button type="button" className="btn btn-primary">Save changes</button> */}
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-</nav>
-
-</>
-
-
-
-
-);
+      <Footer />
+    </>
+  )
 }
+
+
+
+
