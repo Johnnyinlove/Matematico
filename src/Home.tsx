@@ -2,12 +2,19 @@ import './App.css'
 import Footer from './Footer'
 import Nav from './Nav'
 import { useNavigate } from 'react-router-dom'
+import yo from '../public/yo.jpg';
 
 function Home() {
   const navigate = useNavigate()
 
-  const goToCursos = () => navigate('/Matematico/Cursos')
-  const goToAutor = () => navigate('/Matematico/Autor')
+  const goToCursos = () => {
+    navigate('/Matematico/Cursos')
+    window.scrollTo(0, 0)
+  }
+  const goToAutor = () => {
+    navigate('/Matematico/Autor')
+    window.scrollTo(0, 0)
+  }
 
   return (
     <>
@@ -25,7 +32,32 @@ function Home() {
                 <button className="btn btn-outline-light btn-lg" onClick={goToAutor}>Sobre Mí</button>
               </div>
               <div className="col-lg-6">
-                <img src="https://cdn.pixabay.com/photo/2015/12/15/06/42/kids-1093758_1280.jpg" className="img-fluid rounded" alt="Estudiantes aprendiendo" />
+                <div id="heroCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" style={{height: '400px'}}>
+                  <div className="carousel-inner rounded" style={{height: '100%'}}>
+                    <div className="carousel-item active" style={{height: '100%'}}>
+                      <img src="https://cdn.pixabay.com/photo/2015/12/15/06/42/kids-1093758_1280.jpg" className="d-block w-100" alt="Estudiantes aprendiendo matemáticas" style={{height: '100%', objectFit: 'cover'}} />
+                    </div>
+                    <div className="carousel-item" style={{height: '100%'}}>
+                      <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg" className="d-block w-100" alt="Universo matemático" style={{height: '100%', objectFit: 'cover'}} />
+                    </div>
+                    <div className="carousel-item" style={{height: '100%'}}>
+                      <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" className="d-block w-100" alt="Estudiante estudiando" style={{height: '100%', objectFit: 'cover'}} />
+                    </div>
+                  </div>
+                  <button className="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                  </button>
+                  <button className="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                  </button>
+                  <div className="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -75,7 +107,7 @@ function Home() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
-                <img src="/yo.jpg" className="img-fluid rounded-circle" alt="Juan Cruz Oduardo" style={{width: '200px'}} />
+                <img src={yo} className="img-fluid rounded-circle" style={{width: '200px'}} alt="Juan Cruz Oduardo" />
               </div>
               <div className="col-lg-6">
                 <h2>Sobre Juan Cruz Oduardo</h2>
