@@ -5,8 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import yo from '../public/yo.jpg';
 
 import { useEffect } from "react";
-import { Carousel } from "bootstrap";
-
+import Carousel from 'react-bootstrap/Carousel';
 
 function Home() {
   const navigate = useNavigate()
@@ -22,17 +21,17 @@ function Home() {
 
 
 // Para iniciar el carusel al cargar la página
-useEffect(() => {
-  const myCarousel = document.querySelector("#heroCarousel");
+// useEffect(() => {
+//   const myCarousel = document.querySelector("#heroCarousel");
 
-  if (myCarousel) {
-    new Carousel(myCarousel, {
-      interval: 5000,
-      ride: "carousel",
-      pause: false
-    });
-  }
-}, []);
+//   if (myCarousel) {
+//     new Carousel(myCarousel, {
+//       interval: 5000,
+//       ride: "carousel",
+//       pause: false
+//     });
+//   }
+// }, []);
 
 
 
