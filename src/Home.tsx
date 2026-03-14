@@ -18,11 +18,15 @@ function Home() {
 
   return (
     <>
-      <div className='App'>
-        <Nav />
+      <div className='app'>
+
+
+
+
+      <Nav />
 
         {/* Hero Section */}
-        <section className="hero bg-primary text-white py-5">
+       <section className="hero bg-primary text-white py-5">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
@@ -64,11 +68,11 @@ function Home() {
         </section>
 
         {/* Servicios Section */}
-        <section className="services py-5 bg-light">
+       <section className="services py-5 bg-light">
           <div className="container">
             <h2 className="text-center mb-5">Mis Servicios</h2>
-            <div className="row">
-              <div className="col-md-4 mb-4">
+            <div className="row g-4">
+              <div className="col-12 col-md-6 col-xl-4">
                 <div className="card h-100 shadow">
                   <div className="card-body text-center">
                     <i className="bi bi-calculator fs-1 text-primary mb-3"></i>
@@ -78,7 +82,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 mb-4">
+              <div className="col-12 col-md-6 col-xl-4">
                 <div className="card h-100 shadow">
                   <div className="card-body text-center">
                     <i className="bi bi-book fs-1 text-success mb-3"></i>
@@ -88,7 +92,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 mb-4">
+              <div className="col-12 col-md-6 col-xl-4">
                 <div className="card h-100 shadow">
                   <div className="card-body text-center">
                     <i className="bi bi-code-slash fs-1 text-info mb-3"></i>
@@ -119,15 +123,15 @@ function Home() {
         </section>
 
         {/* Call to Action */}
-        <section className="cta bg-primary text-white py-5">
+         {/*<section className="cta bg-primary text-white py-5">
           <div className="container text-center">
             <h2>¿Listo para mejorar tus notas en matemáticas?</h2>
             <p className="lead">Contáctame hoy y comienza tu viaje hacia el éxito académico.</p>
             <button className="btn btn-light btn-lg">Reservar Clase</button>
           </div>
-        </section>
+        </section>*/}
 
-        <Footer />
+          <Footer /> 
       </div>
     </>
   )

@@ -6,9 +6,13 @@ import { useNavigate } from 'react-router-dom'
 export default function Cursos() {
   const navigate = useNavigate()
 
-  const goToMatI = () => navigate('/Matematico/CursoMatI')
-  const goToMatIII = () => navigate('/Matematico/CursoMatIII')
-  const goToMatIV = () => navigate('/Matematico/CursoMatIV')
+  const goToMatI = () => {navigate('/Matematico/CursoMatI');  
+      window.scrollTo(0, 0)}
+
+  const goToMatIII = () => {navigate('/Matematico/CursoMatIII');  
+      window.scrollTo(0, 0)}
+  const goToMatIV = () => {navigate('/Matematico/CursoMatIV');  
+      window.scrollTo(0, 0)}
 
   return (
     <>
@@ -18,7 +22,7 @@ export default function Cursos() {
         <p className="text-center lead mb-5">Explora mis cursos de matemáticas y otras asignaturas. Cada curso está diseñado para maximizar tu aprendizaje.</p>
 
         <div className="row">
-          <div className="col-md-4 mb-4">
+          <div className="col-md-5 mb-5">
             <div className="card h-100 shadow">
               <div className="card-body">
                 <h5 className="card-title">Matemática I</h5>
@@ -27,7 +31,7 @@ export default function Cursos() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className="col-md-5 mb-5">
             <div className="card h-100 shadow">
               <div className="card-body">
                 <h5 className="card-title">Matemática III</h5>
@@ -36,7 +40,7 @@ export default function Cursos() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className="col-md-5 mb-5">
             <div className="card h-100 shadow">
               <div className="card-body">
                 <h5 className="card-title">Matemática IV</h5>

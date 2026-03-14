@@ -121,43 +121,43 @@ function Autor() {
       <div className="col-6 col-md-3">
         <a href="https://wa.me/5356908535/?text=Olá%20Juan!%20Vi%20seu%20anúncio%20e%20tenho%20interesse%20nas%20aulas%20de%20matemática." className="btn btn-success btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
           <i className="bi bi-whatsapp fs-1 mb-2"></i>
-          <span>WhatsApp</span>
+          <span></span>
         </a>
       </div>
       <div className="col-6 col-md-3">
         <a href="https://www.facebook.com/juan.cruzoduardo" className="btn btn-primary btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
           <i className="bi bi-facebook fs-1 mb-2"></i>
-          <span>Facebook</span>
+          <span></span>
         </a>
       </div>
       <div className="col-6 col-md-3">
         <a href="https://t.me/Whatwho01" className="btn btn-info btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
           <i className="bi bi-telegram fs-1 mb-2"></i>
-          <span>Telegram</span>
+          <span></span>
         </a>
       </div>
       <div className="col-6 col-md-3">
         <a href="mailto:johnmanito3@gmail.com" className="btn btn-danger btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
           <i className="bi bi-envelope fs-1 mb-2"></i>
-          <span>Email</span>
+          <span></span>
         </a>
       </div>
       <div className="col-6 col-md-3">
         <a href="https://www.linkedin.com/in/john-manito-bb4b02259" className="btn btn-secondary btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
           <i className="bi bi-linkedin fs-1 mb-2"></i>
-          <span>LinkedIn</span>
+          <span></span>
         </a>
       </div>
       <div className="col-6 col-md-3">
         <a href="https://github.com/Johnnyinlove" className="btn btn-dark btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
           <i className="bi bi-github fs-1 mb-2"></i>
-          <span>GitHub</span>
+          <span></span>
         </a>
       </div>
       <div className="col-6 col-md-3">
         <a href="https://www.notion.so/Getting-Started-on-Mobile-8d98ea3f4d1441c68f8a9d8bc4e9ba6f?pvs=4" className="btn btn-light btn-lg w-100 d-flex flex-column align-items-center border" target="_blank" rel="noopener noreferrer">
           <i className="bi bi-file-earmark-text fs-1 mb-2 text-dark"></i>
-          <span>Notion</span>
+          <span></span>
         </a>
       </div>
     </div>
