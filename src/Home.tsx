@@ -4,6 +4,10 @@ import Nav from './Nav'
 import { useNavigate } from 'react-router-dom'
 import yo from '../public/yo.jpg';
 
+import { useEffect } from "react";
+import { Carousel } from "bootstrap";
+
+
 function Home() {
   const navigate = useNavigate()
 
@@ -15,6 +19,22 @@ function Home() {
     navigate('/Matematico/Autor')
     window.scrollTo(0, 0)
   }
+
+
+// Para iniciar el carusel al cargar la página
+useEffect(() => {
+  const myCarousel = document.querySelector("#heroCarousel");
+
+  if (myCarousel) {
+    new Carousel(myCarousel, {
+      interval: 5000,
+      ride: "carousel",
+      pause: false
+    });
+  }
+}, []);
+
+
 
   return (
     <>
@@ -32,17 +52,17 @@ function Home() {
               <div className="col-lg-6">
                 <h1 className="display-4 fw-bold">Domina las Matemáticas con un Experto</h1>
                 <p className="lead">Clases personalizadas adaptadas a tu ritmo. Aprende matemáticas de manera efectiva y divertida con Juan Cruz Oduardo, licenciado en Matemática.</p>
-                <button className="btn btn-light btn-lg me-3" onClick={goToCursos}>Ver Cursos</button>
-                <button className="btn btn-outline-light btn-lg" onClick={goToAutor}>Sobre Mí</button>
+                <button className="btn btn-light btn-lg me-3 mb-2" onClick={goToCursos}>Ver Cursos</button>
+                <button className="btn btn-outline-light btn-lg mb-2" onClick={goToAutor}>Sobre Mí</button>
               </div>
               <div className="col-lg-6">
-                <div id="heroCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" style={{height: '400px'}}>
+                <div id="heroCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" style={{height: '307px'}}>
                   <div className="carousel-inner rounded" style={{height: '100%'}}>
                     <div className="carousel-item active" style={{height: '100%'}}>
                       <img src="https://cdn.pixabay.com/photo/2015/12/15/06/42/kids-1093758_1280.jpg" className="d-block w-100" alt="Estudiantes aprendiendo matemáticas" style={{height: '100%', objectFit: 'cover'}} />
                     </div>
                     <div className="carousel-item" style={{height: '100%'}}>
-                      <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg" className="d-block w-100" alt="Universo matemático" style={{height: '100%', objectFit: 'cover'}} />
+                      <img src="https://media.istockphoto.com/id/1866121335/pt/foto/physics-and-mathematics.jpg?s=612x612&w=is&k=20&c=Gcw6JAfiC01wAchXDB6NtmyeHoeAIjIIl25dTZo0y00=" className="d-block w-100" alt="Universo matemático" style={{height: '100%', objectFit: 'cover'}} />
                     </div>
                     <div className="carousel-item" style={{height: '100%'}}>
                       <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" className="d-block w-100" alt="Estudiante estudiando" style={{height: '100%', objectFit: 'cover'}} />
