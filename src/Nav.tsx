@@ -37,7 +37,7 @@ export default function Nav () {
         <>
 
 
-<nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+<nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top">
   <div className="container-fluid">
     <a className="navbar-brand fw-bold" onClick={ReturnHome} href="#" style={{cursor: 'pointer'}}>
       <i className="bi bi-calculator me-2"></i>Matemático
