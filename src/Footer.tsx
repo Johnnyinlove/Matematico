@@ -70,7 +70,7 @@ export default function Footer() {
 
         <p className="text-break">
           <i className="bi bi-envelope me-2"></i>
-          johnmanito3@gmail.com
+          empresacuba4@gmail.com
         </p>
 
         <p>

@@ -54,23 +54,23 @@ function Autor() {
 <hr />
         <h5 className="card-title"> Habilidades informáticas </h5>
         <div className="card-text">
-          <div className="mb-3">
-            <strong>Microsoft Office (Word, PowerPoint, Excel):</strong> Medio
-            <div className="progress mt-1" style={{height: '25px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+          <div className="mb-2">
+            <strong>Microsoft Office (Word, PowerPoint, Excel)</strong>
+            {/* <div className="progress mt-1" style={{height: '25px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
               <div className="progress-bar" style={{width: '60%', background: 'linear-gradient(45deg, #87ceeb, #4682b4)', borderRadius: '10px', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 0 0 5px rgba(135,206,235,0.5)'}}>60%</div>
-            </div>
+            </div> */}
           </div>
-          <div className="mb-3">
-            <strong>Programación (C++, Linux, Wolfram Mathematica, HTML, CSS, JavaScript, TypeScript):</strong> Básico
-            <div className="progress mt-1" style={{height: '25px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+          <div className="mb-2">
+            <strong>Programación (C++, Linux, Wolfram Mathematica, HTML, CSS, JavaScript, TypeScript)</strong>
+            {/* <div className="progress mt-1" style={{height: '25px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
               <div className="progress-bar" style={{width: '30%', background: 'linear-gradient(45deg, #00bfff, #1e90ff)', borderRadius: '10px', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 0 0 5px rgba(0,191,255,0.5)'}}>30%</div>
-            </div>
+            </div> */}
           </div>
-          <div className="mb-3">
-            <strong>Herramientas (LATEX, Microsoft Windows, Redes Sociales e Internet):</strong> Medio
-            <div className="progress mt-1" style={{height: '25px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
+          <div className="mb-2">
+            <strong>Herramientas (LATEX, Microsoft Windows, Redes Sociales e Internet)</strong>
+            {/* <div className="progress mt-1" style={{height: '25px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)'}}>
               <div className="progress-bar" style={{width: '60%', background: 'linear-gradient(45deg, #4169e1, #000080)', borderRadius: '10px', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 0 0 5px rgba(65,105,225,0.5)'}}>60%</div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="mt-3">
@@ -137,14 +137,8 @@ function Autor() {
         </a>
       </div>
       <div className="col-6 col-md-3">
-        <a href="mailto:johnmanito3@gmail.com" className="btn btn-danger btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:empresacuba4@gmail.com" className="btn btn-danger btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
           <i className="bi bi-envelope fs-1 mb-2"></i>
-          <span></span>
-        </a>
-      </div>
-      <div className="col-6 col-md-3">
-        <a href="https://www.linkedin.com/in/john-manito-bb4b02259" className="btn btn-secondary btn-lg w-100 d-flex flex-column align-items-center" target="_blank" rel="noopener noreferrer">
-          <i className="bi bi-linkedin fs-1 mb-2"></i>
           <span></span>
         </a>
       </div>
