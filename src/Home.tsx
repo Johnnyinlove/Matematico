@@ -5,7 +5,10 @@ import { useNavigate } from 'react-router-dom'
 import yo from '../public/yo.jpg';
 
 import { useEffect } from "react";
-import Carousel from 'react-bootstrap/Carousel';
+import {Carousel} from 'bootstrap';
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 function Home() {
   const navigate = useNavigate()
@@ -20,20 +23,21 @@ function Home() {
   }
 
 
-// Para iniciar el carusel al cargar la página
-// useEffect(() => {
-//   const myCarousel = document.querySelector("#heroCarousel");
+useEffect(() => {
+    const element = document.querySelector("#heroCarousel");
 
-//   if (myCarousel) {
-//     new Carousel(myCarousel, {
-//       interval: 5000,
-//       ride: "carousel",
-//       pause: false
-//     });
-//   }
-// }, []);
+    if (element) {
+      new Carousel(element, {
+        interval: 4000,
+        ride: "carousel",
+        pause: false,
+        touch: true,
+        wrap: true
+      });
+    }
+  }, []);
 
-
+// data-bs-ride="carousel" data-bs-interval="3000" 
 
   return (
     <>
@@ -55,7 +59,7 @@ function Home() {
                 <button className="btn btn-outline-light btn-lg mb-2" onClick={goToAutor}>Sobre Mí</button>
               </div>
               <div className="col-lg-6">
-                <div id="heroCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" style={{height: '307px'}}>
+                <div id="heroCarousel" className="carousel slide" style={{height: '299px'}}>
                   <div className="carousel-inner rounded" style={{height: '100%'}}>
                     <div className="carousel-item active" style={{height: '100%'}}>
                       <img src="https://cdn.pixabay.com/photo/2015/12/15/06/42/kids-1093758_1280.jpg" className="d-block w-100" alt="Estudiantes aprendiendo matemáticas" style={{height: '100%', objectFit: 'cover'}} />
