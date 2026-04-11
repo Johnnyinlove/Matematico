@@ -240,3 +240,26 @@ text-align: center; /*para alinear en el centro*/
   background: linear-gradient(90deg, #a6a6a6, #d9d9d9); /* Inversión del degradado al pasar el ratón */  
   transform: scale(1.05); /* Efecto de aumento en el hover */  
 } 
+.portfolio-page .portfolio-hero {
+  background-image: linear-gradient(135deg, rgba(0, 53, 140, 0.9), rgba(15, 120, 220, 0.9));
+}
+
+.portfolio-page .portfolio-grid .project-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portfolio-page .portfolio-grid .project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-badge {
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.5em 0.8em;
+}
+
+.portfolio-cta {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}

@@ -19,11 +19,11 @@ export default function Nav () {
     }
 
    const goRepasoM =()=> {
-    navigate("/Matematico/Autor");  
+    navigate("/Matematico/Cursos");  
     }
 
-   const goWebs =()=> {
-    navigate("/Matematico/Autor");  
+   const goPortafolio =()=> {
+    navigate("/Matematico/Portafolio");  
     }
 
    const goMusico =()=> {
@@ -61,7 +61,7 @@ export default function Nav () {
             <li><a className="dropdown-item" href="#">Informática</a></li>
             <li><a className="dropdown-item" href="#">Física</a></li>
             <li><a className="dropdown-item" href="#">Química</a></li>
-            <li><a className="dropdown-item" onClick={goWebs} href="#" style={{cursor: 'pointer'}}>Desarrollo Web</a></li>
+            <li><a className="dropdown-item" onClick={goPortafolio} href="#" style={{cursor: 'pointer'}}>Desarrollo Web</a></li>
             <li><a className="dropdown-item" onClick={goMusico} href="#" style={{cursor: 'pointer'}}>Música</a></li>
           </ul>
         </li>

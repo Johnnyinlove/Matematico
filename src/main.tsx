@@ -9,7 +9,9 @@ import Economia from "./Economia.tsx";
 import MatI from "./CursosMatI";
 import MatIV from "./CursosMatIV.tsx";
 import Cursos from './Cursos.tsx';
-
+import Portafolio from './Portafolio.tsx';
+import MarketingDigital from './MarketingDigital.tsx';
+import Curriculum from './Curriculum.tsx';
 import './index.css'
 import SongSearch from './SongSearch.tsx';
 
@@ -25,7 +27,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Route path='/Matematico/CursoMatIV' element={<MatIV/> }/>
       <Route path='/Matematico/Musica' element={<SongSearch/> }/>
       <Route path='/Matematico/Economia' element={<Economia/> }/>
-      <Route path='Matematico/Autor' element={<Autor/> }/>
+      <Route path='/Matematico/Portafolio' element={<Portafolio/> }/>
+      <Route path='/Matematico/MarketingDigital' element={<MarketingDigital/> }/>
+      <Route path='/Matematico/Curriculum' element={<Curriculum/> }/>
+      <Route path='/Matematico/Autor' element={<Autor/> }/>
       <Route path='/Matematico/*' element={<NotFound/> }/>
     </Routes>
     </BrowserRouter>

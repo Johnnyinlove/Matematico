@@ -21,6 +21,18 @@ function Home() {
     navigate('/Matematico/Autor')
     window.scrollTo(0, 0)
   }
+  const goToPortafolio = () => {
+    navigate('/Matematico/Portafolio')
+    window.scrollTo(0, 0)
+  }
+  const goToMarketing = () => {
+    navigate('/Matematico/MarketingDigital')
+    window.scrollTo(0, 0)
+  }
+  const goToCurriculum = () => {
+    navigate('/Matematico/Curriculum')
+    window.scrollTo(0, 0)
+  }
 
 
 useEffect(() => {
@@ -59,16 +71,16 @@ useEffect(() => {
                 <button className="btn btn-outline-light btn-lg mb-2" onClick={goToAutor}>Sobre Mí</button>
               </div>
               <div className="col-lg-6">
-                <div id="heroCarousel" className="carousel slide" style={{height: '299px'}}>
-                  <div className="carousel-inner rounded" style={{height: '100%'}}>
-                    <div className="carousel-item active" style={{height: '100%'}}>
-                      <img src="https://cdn.pixabay.com/photo/2015/12/15/06/42/kids-1093758_1280.jpg" className="d-block w-100" alt="Estudiantes aprendiendo matemáticas" style={{height: '100%', objectFit: 'cover'}} />
+                <div id="heroCarousel" className="carousel slide hero-carousel">
+                  <div className="carousel-inner rounded hero-carousel-inner">
+                    <div className="carousel-item active hero-carousel-item">
+                      <img src="https://cdn.pixabay.com/photo/2015/12/15/06/42/kids-1093758_1280.jpg" className="d-block w-100 hero-carousel-img" alt="Estudiantes aprendiendo matemáticas" />
                     </div>
-                    <div className="carousel-item" style={{height: '100%'}}>
-                      <img src="https://media.istockphoto.com/id/1866121335/pt/foto/physics-and-mathematics.jpg?s=612x612&w=is&k=20&c=Gcw6JAfiC01wAchXDB6NtmyeHoeAIjIIl25dTZo0y00=" className="d-block w-100" alt="Universo matemático" style={{height: '100%', objectFit: 'cover'}} />
+                    <div className="carousel-item hero-carousel-item">
+                      <img src="https://media.istockphoto.com/id/1866121335/pt/foto/physics-and-mathematics.jpg?s=612x612&w=is&k=20&c=Gcw6JAfiC01wAchXDB6NtmyeHoeAIjIIl25dTZo0y00=" className="d-block w-100 hero-carousel-img" alt="Universo matemático" />
                     </div>
-                    <div className="carousel-item" style={{height: '100%'}}>
-                      <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" className="d-block w-100" alt="Estudiante estudiando" style={{height: '100%', objectFit: 'cover'}} />
+                    <div className="carousel-item hero-carousel-item">
+                      <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" className="d-block w-100 hero-carousel-img" alt="Estudiante estudiando" />
                     </div>
                   </div>
                   <button className="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
@@ -93,14 +105,14 @@ useEffect(() => {
         {/* Servicios Section */}
        <section className="services py-5 bg-light">
           <div className="container">
-            <h2 className="text-center mb-5">Mis Servicios</h2>
+            <h2 className="text-center mb-5">Mis Servicios Profesionales</h2>
             <div className="row g-4">
               <div className="col-12 col-md-6 col-xl-4">
                 <div className="card h-100 shadow">
                   <div className="card-body text-center">
                     <i className="bi bi-calculator fs-1 text-primary mb-3"></i>
                     <h5 className="card-title">Clases de Matemática</h5>
-                    <p className="card-text">Desde básico hasta avanzado. Preparación para exámenes, refuerzo escolar y más.</p>
+                    <p className="card-text">Clases personalizadas de matemática para todos los niveles, con énfasis en resultados y comprensión real.</p>
                     <button className="btn btn-primary" onClick={goToCursos}>Saber Más</button>
                   </div>
                 </div>
@@ -108,10 +120,40 @@ useEffect(() => {
               <div className="col-12 col-md-6 col-xl-4">
                 <div className="card h-100 shadow">
                   <div className="card-body text-center">
-                    <i className="bi bi-book fs-1 text-success mb-3"></i>
-                    <h5 className="card-title">Repaso de Asignaturas</h5>
-                    <p className="card-text">Inglés, Informática, Física, Química y otras materias. Apoyo académico integral.</p>
-                    <button className="btn btn-success">Contactar</button>
+                    <i className="bi bi-megaphone fs-1 text-warning mb-3"></i>
+                    <h5 className="card-title">Marketing Digital</h5>
+                    <p className="card-text">Estrategias online para potenciar tu marca, gestionar redes y atraer nuevos clientes.</p>
+                    <button className="btn btn-warning" onClick={goToMarketing}>Ver Trabajos</button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-xl-4">
+                <div className="card h-100 shadow">
+                  <div className="card-body text-center">
+                    <i className="bi bi-file-earmark-text fs-1 text-success mb-3"></i>
+                    <h5 className="card-title">Confección de Currículum</h5>
+                    <p className="card-text">Diseño de CV profesional, enfocado a destacar tu experiencia y oportunidades laborales.</p>
+                    <button className="btn btn-success" onClick={goToCurriculum}>Ver Trabajos</button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-xl-4">
+                <div className="card h-100 shadow">
+                  <div className="card-body text-center">
+                    <i className="bi bi-currency-dollar fs-1 text-info mb-3"></i>
+                    <h5 className="card-title">Impuestos de Renta</h5>
+                    <p className="card-text">Asesoría y gestión completa de tu declaración de renta con precisión y confidencialidad.</p>
+                    <button className="btn btn-info" onClick={goToAutor}>Contactar</button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-xl-4">
+                <div className="card h-100 shadow">
+                  <div className="card-body text-center">
+                    <i className="bi bi-phone fs-1 text-danger mb-3"></i>
+                    <h5 className="card-title">Desbloqueo de Teléfonos</h5>
+                    <p className="card-text">Servicio seguro de desbloqueo de dispositivos móviles para que puedas usar tu equipo libremente.</p>
+                    <button className="btn btn-danger" onClick={goToAutor}>Contactar</button>
                   </div>
                 </div>
               </div>
@@ -120,8 +162,8 @@ useEffect(() => {
                   <div className="card-body text-center">
                     <i className="bi bi-code-slash fs-1 text-info mb-3"></i>
                     <h5 className="card-title">Desarrollo Web</h5>
-                    <p className="card-text">Creación de sitios web profesionales, aplicaciones y soluciones digitales.</p>
-                    <button className="btn btn-info">Ver Portafolio</button>
+                    <p className="card-text">Creación de sitios web profesionales, aplicaciones y soluciones digitales para tu presencia online.</p>
+                    <button className="btn btn-info" onClick={goToPortafolio}>Ver Portafolio</button>
                   </div>
                 </div>
               </div>
@@ -133,8 +175,8 @@ useEffect(() => {
         <section className="about py-5">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6">
-                <img src={yo} className="img-fluid rounded-circle" style={{width: '200px'}} alt="Juan Cruz Oduardo" />
+              <div className="col-lg-6 text-center">
+                <img src={yo} className="img-fluid rounded-circle author-photo" alt="Juan Cruz Oduardo" />
               </div>
               <div className="col-lg-6">
                 <h2>Sobre Juan Cruz Oduardo</h2>

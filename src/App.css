@@ -64,6 +64,151 @@
   object-fit: cover;
 }
 
+.portfolio-page {
+  background: #f4f7fb;
+  color: #202840;
+}
 
+.portfolio-hero {
+  background: linear-gradient(135deg, #153e87 0%, #1f62b1 100%);
+  color: #f8fbff;
+}
 
+.portfolio-hero .container {
+  max-width: 1024px;
+}
+
+.portfolio-hero h1 {
+  font-size: 2.8rem;
+  letter-spacing: -0.03em;
+}
+
+.portfolio-hero p {
+  max-width: 760px;
+  margin: 0 auto 1.75rem;
+  color: rgba(248, 251, 255, 0.9);
+}
+
+.portfolio-list {
+  padding: 4rem 0;
+}
+
+.project-card {
+  border: 1px solid rgba(32, 40, 64, 0.08);
+  border-radius: 1rem;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  background: #ffffff;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 60px rgba(15, 42, 104, 0.12);
+}
+
+.project-card .card-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.portfolio-badge {
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(21, 62, 135, 0.12);
+  color: #153e87;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+}
+
+.project-card h5 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.project-card p {
+  color: #5f6982;
+}
+
+.project-card .btn {
+  padding: 0.95rem 1.25rem;
+}
+
+.portfolio-page .btn-outline-primary {
+  border-color: rgba(21, 62, 135, 0.9);
+  color: #153e87;
+}
+
+.portfolio-page .btn-outline-primary:hover {
+  background: rgba(21, 62, 135, 0.08);
+  border-color: #153e87;
+}
+
+.btn-light {
+  background-color: #ffffff;
+  color: #153e87;
+  border-color: transparent;
+}
+
+.btn-light:hover {
+  background-color: #f0f5ff;
+}
+
+.pdf-section {
+  background: #ffffff;
+}
+
+.pdf-card {
+  border-radius: 1rem;
+}
+
+.pdf-viewer-card {
+  border-radius: 1rem;
+  min-height: 540px;
+  overflow: hidden;
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 100%;
+  min-height: 540px;
+  border: none;
+}
+
+.pdf-files-list button {
+  text-align: left;
+}
+
+.pdf-files-list .active {
+  background-color: #153e87;
+  color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .pdf-viewer-card {
+    min-height: 420px;
+  }
+
+  .pdf-viewer {
+    min-height: 420px;
+  }
+}
+
+.hero-carousel {
+  height: 299px;
+}
+
+.hero-carousel-inner,
+.hero-carousel-item {
+  height: 100%;
+}
+
+.hero-carousel-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.author-photo {
+  width: 200px;
+}
 
